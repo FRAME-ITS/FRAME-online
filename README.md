@@ -62,9 +62,7 @@ Simply push changes to the repository — GitHub Actions will build and publish 
 
 ## 🙏 Acknowledgement
 
-?? quote "Acknowledgment"
-
-<img src="assets/img/cofinanced-eu-logo.png" alt="Co-financed by European Union" width="50%" height="auto" align="right">
+<img src="docs/assets/img/cofinanced-eu-logo.png" alt="Co-financed by European Union" width="50%" height="auto" align="right">
 
 The FRAME has received funding from the European Union's Connecting Europe Facility (CEF) programme under grant agreement No [MOVE/C3/SUB/2016-405/CEF/PSA/SI2.759934]. For more information go to Projects section.
 
