@@ -1,36 +1,72 @@
-# FRAME website
+[![Build Status](https://github.com/FRAME-ITS/FRAME-online/actions/workflows/ci.yml/badge.svg)](https://github.com/FRAME-ITS/FRAME-online/actions/workflows/ci.yml)
+[![GitHub Pages](https://img.shields.io/badge/Pages-deployed-brightgreen)](https://frame-its.github.io/FRAME-online/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-This website reports on FRAME methodology (FRamework Architecture Made for Europe) available at [GitHub](https://github.com/FRAME-NEXT/FRAME) with dedicated websites of [FRAME home](https://frame-online.eu/) and of [FRAME-NEXT project](https://frame-next.eu/).
+# FRAME Website
 
+This repository contains the source code for the **FRAME online website**, presenting the FRAME methodology (*FRamework Architecture Made for Europe*) and all resources.
 
-## Working with website
+---
 
-The website content is stored in /docs folder.
+## 📁 Repository Structure
 
-### Local Installation
+- **`/docs`** — All website content (Markdown pages, images, navigation structure).  
+- **`mkdocs.yml`** — MkDocs configuration file.  
+- **`pdm.lock` / `pyproject.toml`** — Python project and dependency management via PDM.
 
-Using Python 3.12 and pdm:
+---
 
-$ pdm install
+## 🛠️ Local Installation
 
-Before using the installed mkdocs command, make sure you activate it's virtualenv.
+The project uses **Python 3.12** and **PDM** for environment and dependency management.
 
-### Local development
+```bash
+pdm install
+```
 
-Edit files in the docs folder. See https://www.mkdocs.org/user-guide/writing-your-docs/
+Before running MkDocs, activate the virtual environment created by PDM:
 
-Run from project root:
+```bash
+pdm venv activate
+```
 
-$ mkdocs serve
+---
 
-Then open http://localhost:8000
+## 🧪 Local Development
 
-This shall update as soon as you save any content file.
+Edit Markdown files inside the `docs` folder.  
+MkDocs documentation: https://www.mkdocs.org/user-guide/writing-your-docs/
 
-### Deploying on GitHub Pages
+Start a local development server from the project root:
 
-Just push the repository to GitHub. It shall build the page on it's own.
+```bash
+mkdocs serve
+```
 
-## Acknowledgement
+Then open:
 
-TODO
+```
+http://localhost:8000
+```
+
+The site will automatically reload whenever you save changes.
+
+---
+
+## 🚀 Deployment (GitHub Pages)
+
+Deployment is fully automated.  
+Simply push changes to the repository — GitHub Actions will build and publish the site to GitHub Pages.
+
+---
+
+## 🙏 Acknowledgement
+
+?? quote "Acknowledgment"
+
+<img src="assets/img/cofinanced-eu-logo.png" alt="Co-financed by European Union" width="50%" height="auto" align="right">
+
+The FRAME has received funding from the European Union's Connecting Europe Facility (CEF) programme under grant agreement No [MOVE/C3/SUB/2016-405/CEF/PSA/SI2.759934]. For more information go to Projects section.
+
+The content of this document reflects only the authors' views, and the European Union is not responsible for any use that may be made of the information it contains.
+
