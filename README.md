@@ -1,20 +1,16 @@
+# FRAME Website
+
 [![Build Status](https://github.com/FRAME-ITS/FRAME-online/actions/workflows/ci.yml/badge.svg)](https://github.com/FRAME-ITS/FRAME-online/actions/workflows/ci.yml)
 [![GitHub Pages](https://img.shields.io/badge/Pages-deployed-brightgreen)](https://frame-its.github.io/FRAME-online/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-# FRAME Website
-
 This repository contains the source code for the **FRAME online website**, presenting the FRAME methodology (*FRamework Architecture Made for Europe*) and all resources.
-
----
 
 ## 📁 Repository Structure
 
 - **`/docs`** — All website content (Markdown pages, images, navigation structure).  
 - **`mkdocs.yml`** — MkDocs configuration file.  
 - **`pdm.lock` / `pyproject.toml`** — Python project and dependency management via PDM.
-
----
 
 ## 🛠️ Local Installation
 
@@ -29,8 +25,6 @@ Before running MkDocs, activate the virtual environment created by PDM:
 ```bash
 pdm venv activate
 ```
-
----
 
 ## 🧪 Local Development
 
@@ -51,14 +45,10 @@ http://localhost:8000
 
 The site will automatically reload whenever you save changes.
 
----
-
 ## 🚀 Deployment (GitHub Pages)
 
 Deployment is fully automated.  
 Simply push changes to the repository — GitHub Actions will build and publish the site to GitHub Pages.
-
----
 
 ## 🙏 Acknowledgement
 
