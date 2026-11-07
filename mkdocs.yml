@@ -5,7 +5,8 @@ site_url: https://frame-its.github.io/FRAME-online
 repo_name: FRAME-online
 edit_uri: edit/main/docs/
 theme:
-  logo: assets/img/frame-logo.png
+  logo: assets/img/frame-icon.png
+  favicon: assets/img/favicon.png
   name: material
   icon:
     annotation: material/arrow-right-circle

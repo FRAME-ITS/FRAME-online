@@ -5,6 +5,8 @@ hide:
   - toc
 ---
 
+<img src="assets/img/frame-logo-full.png" alt="FRAME – ITS Architecture" width="360">
+
 # FRAME – European ITS Framework Architecture
 
 FRAME is the European framework for planning integrated and interoperable Intelligent Transport Systems (ITS). It contains the User Needs and the functionality of practically all of ITS, a method for selecting the part a service needs, and an Enterprise Architect tool in which the motivation, functional, organisational, physical and communication views of the service are built.
