@@ -1,28 +1,34 @@
 name: ci
+# Builds the website with Zensical (successor of Material for MkDocs, reads mkdocs.yml) and publishes it to
+# GitHub Pages. Repository settings → Pages → Source must be "GitHub Actions".
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - uses: actions/configure-pages@v5
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
+      - run: pip install zensical==0.0.67
+      - run: zensical build --clean
+      - uses: actions/upload-pages-artifact@v3
         with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-      - run: pip install mkdocs-material mkdocs-macros-plugin
-      - run: mkdocs gh-deploy --force
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
