@@ -1,6 +1,6 @@
 site_name: FRAME Online
-repo_url: https://github.com/burespe1/FRAME-online
-site_url: https://burespe1.github.io/FRAME-online
+repo_url: https://github.com/FRAME-ITS/FRAME-online
+site_url: https://frame-its.github.io/FRAME-online
 repo_name: FRAME-online
 theme:
   logo: assets/img/frame-logo.png
@@ -40,15 +40,10 @@ nav:
       - "Documents & Methodologies": docs/documents-and-methodologies.md
       - "Articles & Reports": docs/articles-related-reports.md
   - Projects:
-      - FRAME-NEXT: projects/frame-next.md 
+      - FRAME projects: projects/frame-next.md
   - About: 
       - Impressum: about.md
       - FAQs: faq.md
-  - Parked:
-      - ITS Directives: unused/its-directives.md
-      - Old index: unused/old-index.md
-      - Objectives: unused/objectives.md
-      - Services: unused/services.md 
       
 
 markdown_extensions:

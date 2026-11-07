@@ -1,44 +1,44 @@
 # FAQ
 
-## [Planning a modern Transport System]()
+## Planning a modern Transport System
 The major European goal in the area of mobility is the creation of the Single European Transport Area, which shall be efficient and safe and which is supportive of the goals for climate change. Once the hard infrastructures are in place of new corridors as well as of existing networks and cities, services are required to optimize their performance and integrate their use. Services, using and providing information, which optimize local performance, provide cross-border continuity and seamlessness and provide the basis for multimodality. A modern road-based transport system will be dependent on a number of Intelligent Transport Systems and Services (ITS), based on telematics, components, automated systems for traffic control and management, fleet management (public transport and goods vehicles) and road pricing. The vehicles using the network are increasingly being equipped with automated support systems and services to enhance driving safety and efficiency. The maximum benefit to end users and other stakeholders will be created from these systems when they are fully integrated or harmonized so that they can share data and operate together in a coordinated manner. Effective cooperation is also needed if stakeholders want to offer advanced services such as cross-modal traveller information and cross-organisational and cross-border traffic management. These services are only feasible by seamless collaboration of ITS actors in ITS value chains and networks, as these require information sharing, particularly if multi-modal journeys or transport are to be promoted.
 
-## [Common Pan-European ITS Architecture]()
+## Common Pan-European ITS Architecture
 Archive a Common Pan-European ITS Architecture that includes the necessary priorities/services for ITS – This will be done by modifying and enhancing the existing FRAME Architecture so that it reflects the results of the various projects in this and other programmes as well as the obligations which came with the ITS Directive and the results of the recent work by CEN TC278 PT1701 on the barriers to Urban ITS deployment.In the FRAME NEXT Architecture it will be particularly important to enable the identification of the functional chains that link the collection of raw data through its processing to its use in such things as the management of the road network, dissemination of travel information support to public transport and support to freight transport.
 
-## [FRAME seems to be too complex. Is there a summary of its contents for the decision makers?]()
+## FRAME seems to be too complex. Is there a summary of its contents for the decision makers?
 FRAME covers most of the ITS available today. These systems are complex in the way that they utilize and share the information between each other. The FRAME Functional View represents all of these systems and the information flow between them, so yes if you consider the entirety of FRAME it may seem a little complex. But the entirety of FRAME is seldomly used in any project all together. It is not meant for high level decision makers of any project to work with the whole of it. FRAME is there to make selections out of it, and to create architecture subsets for specific services.
 
 With the extended scope of FRAME in its version 5.0, an architecture subset includes not only the functional aspects of a service but also elements of the business (enterprise) architecture. The Motivation Layer of a subset architecture identifies the problem to be solved by the desired service, shows the “Vision” behind it and summarizes the highest level requirements. Therefore, the Motivation Layer of an architecture subset is the summary that is aimed to be presented to the decision makers.
 
-## [Is FRAME compatible with mobility as a service (MaaS) applications?]()
+## Is FRAME compatible with mobility as a service (MaaS) applications?
 Yes. The multi-modal traveller information and trip planning services are examples of this. The traveller is an important actor in FRAME and is addressed as both a pre-trip traveler planning a trip and as a traveler on their trip.  For the pre-trip traveler, trip planning and more general travel information is available, which can be delivered to a mobile device or to static locations, such as public transport stops.  Once the traveler is on their trip, they can alter it and be advised of changes in travel conditions that may require a different route or use of services.  The traveler can be a public transport passenger, pedestrian or car driver and can switch between transport modes during their trip.
 
 For some FRAME may appear to have a lot of emphasis on the management of the transport network, but that is because it is complex and is a vital part of ITS if travel services are to be successfully provided.  For example, trip planning either pre-trip or on-trip needs to know about incidents that can affect the choice of route and/or transport mode.  These incidents can take a wide variety of forms and need to be detected, recognized and their impacts mitigated to minimize the disruption to travel and the movement of goods.
 
-## [Does FRAME provide template architectures for its services?]()
+## Does FRAME provide template architectures for its services?
 No. Since the FRAME Architecture is intended to be used within the European Union it conforms to the principle of subsidiarity[1], and thus does not mandate any physical or organisational structure on a Member State. It comprises only a set of User Needs which describe what ITS can provide, and a Functional View showing how it can be done.
 
 In FRAME Next we have created four architecture subsets for the Priority Actions of the European ITS Directive. They are examples of architecture subsets to be produced from FRAME and they demonstrate the extended scope of FRAME towards a complete business (enterprise) architecture with its additional architecture views. Beyond the Priority Actions, FRAME does not provide suggestions for physical or organizational implementations for any of its services.
 
 In future projects FRAME may provide a selection of user needs / functional view for commonly demanded services as templates but these templates would be covering only the core aspects of any service and the rest has to be built according to the requirements of each project.
 
-## [Is it possible to link international standards / guidelines to architecture subsets in FRAME?]()
+## Is it possible to link international standards / guidelines to architecture subsets in FRAME?
 Yes. An architecture subset may refer to standards with provisions in various levels. There are two ways that standards may be referenced in architecture subsets of FRAME. A set of standards may describe a high level structure or recommendations for the service that is being built. In this case the standard may be referenced as a “Requirement” for the service.
 
 In other cases a standard may be related to a specific part of a service and set out a detailed description of what that part is or how it behaves (for example a component or an interface). FRAME offers a stereotyped artefact called “Specification” in its toolbox that can be used to specify standards related to specific parts of an architecture subset.
 
 It is also very easy to generate documentation by filtering only the “specification” objects that are included into any architecture subset’s repository when creating purchase documents or product specifications.
 
-## [Is it possible to model interfaces to existing systems?]()
+## Is it possible to model interfaces to existing systems?
 Yes. It is highly anticipated that some other ITS services will already be in operation while developing an architecture subset for a particular service. These services are outside the boundary of an architecture subset and therefore they are “Terminators” for the service in the architecture subset. It is possible to model these external services using a “Terminator” stereotype, identify their interfaces to the service in the architecture subset, and model their interaction in between.
 
-## [Will I need to purchase the new FRAME Tool?]()
+## Will I need to purchase the new FRAME Tool?
 The new FRAME tool and its repository is being modelled in Enterprise Architect. There is no additional cost to access FRAME materials but you will need to have Enterprise Architect installed. A view-only version of Enterprise Architect could be downloaded from the website of the developer for free. To use all features of Enterprise Architect, and to create architecture subsets of FRAME for your project, a licensed version is necessary.
 
 It is also possible to download a 30-day trial edition of Enterprise Architect from here. The trial edition is fully operational, and can be used to explore the use of FRAME or to create an architecture subset, depending on the complexity of the ITS Service to be modelled.
 
-## [What are FRAME User Needs]()
+## What are FRAME User Needs
 The FRAME User Needs have three principal uses, as follows.
 
  - Specification of the Functional View – One or more User Needs provide the specification for what the functionality in the Functional View must do. Each Function is cross-referenced to one or more User Needs for which it helps to provide primary functionality.
@@ -57,7 +57,7 @@ In order to satisfy these uses the User Needs need to be written in a manner tha
 
 On occasions these properties can be in conflict, in particular when writing User Needs which are unambiguous and singular, but also short, especially as there is a general desire not to have too many User Needs in the entire FRAME Architecture. Whilst no universal way has yet been found to resolve all such conflicts, some can be avoided by starting with a “high-level” User Need that describes a basic form of an application or service, followed by a number of optional extra User Needs that contain the detail of specific features.
 
-## [How can you use the Organisational View?]()
+## How can you use the Organisational View?
 The Organisational View is usually a derivative of the Physical View. It is used to show the organisations that will own, and/or operate, and/or maintain the Sub-systems and Modules in the Physical View. This is very useful for highlighting the relationships between different organisations and any conflicts that may arise. It can also be used to look at how data will have to be, or could be, shared between organisations.
 
 An Organisational View usually considers the following specific issues:
@@ -71,7 +71,7 @@ An Organisational View usually considers the following specific issues:
 
 Some sub-systems and modules will provide data for others and this can raise organisational issues if the data that is provided is incorrect and/or incomplete. When such a failure occurs, it is important to be able to identify who is responsible for its occurrence, for rectifying it and for preventing it happening again. This may not be obvious if the failure is in an emergent property of a service provided by sub-systems owned by more than one organisation, each supplying part of the total service (see below).
 
-## [How can you plan the Behaviour of an integrated ITS?]()
+## How can you plan the Behaviour of an integrated ITS?
 There are occasions when it is necessary to impose a particular form of behaviour, or a particular organisation structure, on integrated ITS. Examples include the need to:
 
  - Localise safety functions so that they will continue to work when “higher” (non-safety) functions are absent;
@@ -79,7 +79,7 @@ There are occasions when it is necessary to impose a particular form of behaviou
 
 In these circumstances an overall concept has to be specified to which the system structure must conform.
 
-## [How can you deal with Liability Issues?]()
+## How can you deal with Liability Issues?
 Integrated ITS may be provided by components owned by more than one organisation, and some hazards may be the result of interactions between those components. It will therefore be necessary to identify who is responsible for dealing with the consequences, both legal and technical. An ITS Architecture provides a model of the components, and their interconnections, and thus a basis for analysing these issues.
 
 ### Safety
@@ -101,7 +101,7 @@ Through their frequent use of vehicle identities, Cooperative Systems need to in
 
 A study of an ITS Architecture will identify where privacy issues need to be considered, in conjunction with CEN standard TR16742.
 
-## [How can you undertake a Risk Analysis?]()
+## How can you undertake a Risk Analysis?
 A risk analysis assesses the hazards that may affect an ITS deployment. Those hazards with the most severe risks should be provided with a mitigation strategy, and each strategy should be assigned to an Owner who is responsible for its implementation.
 
 Risk Analysis is divided into five steps:
@@ -119,7 +119,7 @@ The result should be a list of Hazards, with their Mitigation Strategies and Own
 
 [1] The examples given above are only examples. The number of possible Probabilities and Impacts, as well as the content of the Risk Graph must be approved by a suitable authority. In the case of Safety and Security hazards they may have legal consequences.
 
-## [How can you undertake a Cost/Benefit Analysis?]()
+## How can you undertake a Cost/Benefit Analysis?
 Cost–benefit analysis is a systematic process for calculating and comparing benefits and costs of a project. The costs of an ITS project can be divided between the Capital Costs, e.g. for the acquisition and deployment of equipment, and the Revenue Costs, e.g. for staff. The benefits often cannot be quantified in monetary terms, but may include reduced delays, improved environment, etc.
 
 The following are some of the resources that are freely available:

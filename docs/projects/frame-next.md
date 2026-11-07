@@ -1,4 +1,6 @@
-# FRAME-NEXT project
+# FRAME projects
+
+## FRAME-NEXT (completed)
 
 <img src="../../assets/img/frame-next-pos-rgb-72dpi-1.png" alt="FRAME-NEXT" width="40%" height="auto" align="right">
 
@@ -10,4 +12,15 @@ FRAME-NEXT is a project that extends the FRAME Architecture with the a
 
 FRAME-NEXT project has three main phases of work: State-of-the-Art Analysis, Evolution Cycle, and Dissemination and Outreach.
 
-[go to the FRAME-NEXT website](https://frame-next.eu)
+FRAME-NEXT produced version 5 of the FRAME Architecture (Enterprise Architect model with the FRAME Meta-model and the first reference architectures). Since its end the architecture is maintained by the FRAME Maintainers (see [About](../about.md)).
+
+## Earlier projects
+
+| Project | Result |
+|---|---|
+| KAREN (1998–2000) | first European ITS Framework Architecture: User Needs, functional, physical and communication architectures |
+| FRAME-S, FRAME-NET (2001–2004) | support for national and regional architectures, FRAME Browsing and Selection Tools |
+| E-FRAME (2008–2011) | extension with cooperative systems (version 4) |
+| FRAME-NEXT (2018–2021) | version 5 in Enterprise Architect, methodology and reference architectures |
+
+Deliverables of these projects: [Documents & Methodologies](../docs/documents-and-methodologies.md).

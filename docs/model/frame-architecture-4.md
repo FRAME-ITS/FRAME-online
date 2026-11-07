@@ -35,5 +35,8 @@ Following section contain versions of the FRAME Tool for download. The Tool is a
 
 ## FRAME Selection Tool
 
-The Toolbox is a Software, ...
+The FRAME Selection Tool supported the creation of ITS architectures from FRAME Architecture version 4: the team selects User Needs, the tool leads to the related parts of the Functional View and checks the logical consistency of the selection (see [FRAME Tool](../getting-started/tool.md)).
+
+ - download [**FRAME Selection Tool**](../assets/tools/FRAME-Selection-Tool.zip) and its [**database**](../assets/tools/FRAME-Selection-Tool-database.zip)
+ - [User Manual](../assets/docs/manuals/Selection-Tool-User-Manual-02.pdf) and [Reference Manual](../assets/docs/manuals/selection-tool-reference-manual.pdf)
 

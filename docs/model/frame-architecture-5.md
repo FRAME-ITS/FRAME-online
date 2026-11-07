@@ -1,5 +1,5 @@
 ---
-version: 5.1.1
+version: 5.2
 repository_url: ../uml_models/frame_repository/index.htm
 metamodel_url: ../uml_models/frame_metamodel/index.htm
 ---
@@ -21,6 +21,22 @@ Following section contain versions of the FRAME Tool for download. The Tool is a
 
 	The sections are __Motivational Layer__, __Business Layer__, __Application Layer__, __Data Layer__ and __External__
 
+!!! note "Release 5.3 in preparation"
+
+	Release 5.3 corrects the relationships of the FRAME Repository, includes the FRAME technology (toolbox) V1.3 in the model and comes with an updated User Guide and Installation Guide. Progress: [pull request #95](https://github.com/FRAME-ITS/FRAME/pull/95).
+
+### FRAME_Architecture Tool V5.2 (rel. 21.01.2025)
+
+??? notes "contents and changelog"
+
+	FRAME_Architecture Tool V5.2 contains the FRAME Meta-model, the FRAME Repository and the NAP, National Body, eCall, Safe and Secure Truck Parking and C-ITS Reference Architectures.
+
+	Changes to V5.2: NAP Reference Architecture extended with the results of NAPCORE; National Body Reference Architecture added; NAP data flows of the FRAME Repository aligned with it; definitions of the Meta-model revised; Safety & Security package (PASSPORT) added. Full list of changes: see the release.
+
+#### Download
+
+ - download [**full FRAME tool** in qea format](https://github.com/FRAME-ITS/FRAME/releases/download/v5.2.0/FRAME_Architecture_Tool_V5.2.qea.zip) (Enterprise Architect 16 or later) – [release v5.2.0](https://github.com/FRAME-ITS/FRAME/releases/tag/v5.2.0)
+
 ### FRAME_Architecture Tool V5.1.1 (rel. 05.10.2021)
 
 ??? notes "contents and changelog"
@@ -31,12 +47,12 @@ Following section contain versions of the FRAME Tool for download. The Tool is a
 
 #### Full tool downloads
 
- - download [**full FRAME tool** in eapx format](../assets/tools/FRAME_Architecture_Tool_V5.1.1.eapx.zip),  (enterprise architect <16), [quea format](../assets/tools/FRAME_Architecture_Tool_V5.1.1.qea.zip) (enterprise architect >16) or in [xmi format](../assets/tools/FRAME_Architecture_Tool_V5.1.1.xmi.zip) (exchange)
+ - all files of this version are attached to the [GitHub release v5.1.1](https://github.com/FRAME-ITS/FRAME/releases/tag/v5.1.1)
+ - download [**full FRAME tool** in eapx format](https://github.com/FRAME-ITS/FRAME/releases/download/v5.1.1/FRAME_Architecture_Tool_V5.1.1.eapx.zip),  (enterprise architect <16), [quea format](https://github.com/FRAME-ITS/FRAME/releases/download/v5.1.1/FRAME_Architecture_Tool_V5.1.1.qea.zip) (enterprise architect >16) or in [xmi format](https://github.com/FRAME-ITS/FRAME/releases/download/v5.1.1/FRAME_Architecture_Tool_V5.1.1.xmi.zip) (exchange)
  
 #### Partial downloads
  
- - download **FRAME repository** only in eapx format,  (enterprise architect <16), quea format (enterprise architect >16) or in xmi format (exchange)
-  - download **FRAME Meta-model** only in eapx format,  (enterprise architect <16), quea format (enterprise architect >16) or in xmi format (exchange)
+ - the model packages (meta-model, repository, reference architectures) as separate XML files: [releases/5.1.1](https://github.com/FRAME-ITS/FRAME/tree/master/releases/5.1.1)
 
 <div class="grid cards" markdown>
 
@@ -48,7 +64,7 @@ Following section contain versions of the FRAME Tool for download. The Tool is a
 
 ## FRAME Toolbox
 
-The Toolbox is an Enterprise Architect Model, allowing modelling with FRAME specific objects. It contains the stereotypes, scripts, functionalities and objects which are used in FRAME.
+The Toolbox is an Enterprise Architect MDG technology, allowing modelling with FRAME specific objects. It contains the stereotypes, scripts, functionalities and objects which are used in FRAME. Releases 5.1.1 and 5.2 need Toolbox V1.0 for new projects; from release 5.3 the toolbox (V1.3) is included in the model and is also published with the release.
 
 ### FRAME Toolbox V1.0 (rel. 23.09.2020)
 
@@ -60,5 +76,5 @@ The Toolbox is an Enterprise Architect Model, allowing modelling with FRAME spec
 
 #### Toolbox downloads
 
- - download [**FRAME toolbox** in xml format](../assets/tools/FRAME Toolbox_V1.0.zip)
+ - download [**FRAME toolbox** in xml format](https://github.com/FRAME-ITS/FRAME/releases/download/v5.1.1/FRAME_Toolbox_V1.0.zip)
  

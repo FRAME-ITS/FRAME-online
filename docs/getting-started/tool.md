@@ -2,11 +2,21 @@
 
 ## Use of the FRAME Tool
 
-!!! note
+The FRAME Architecture Tool is a model for Sparx Systems **Enterprise Architect** (version 16 or later, any edition from Professional up). It contains the FRAME Meta-model, the FRAME Repository (User Needs and Functional View), the reference architectures and a template for your own architecture.
 
-    The tool is the Enterprise Architect, in the text below we describe it use with FRAME.
+**Getting started**
 
-TODO
+1. Install Enterprise Architect 16 or later.
+2. Download the latest model from the [FRAME releases](https://github.com/FRAME-ITS/FRAME/releases) and open the `.qea` file; the FRAME landing page leads to the repository, the reference architectures and the User Architecture Template.
+3. Create your architecture in a copy of the model, starting from the User Architecture Template: select the User Needs, follow them to the functions and data flows of the FRAME Repository, and build the other views from them.
+4. Use the FRAME Toolbox for new elements and relationships. FRAME diagrams open it automatically (from release 5.3); for older releases import the toolbox as described in the Installation Guide.
+
+**Guides**
+
+ - Installation Guide – installing Enterprise Architect and the FRAME Architecture Tool
+ - User Guide – navigating the tool and creating your own architecture
+
+Both are published with each release from 5.3 on. Problems and suggestions: [GitHub issues](https://github.com/FRAME-ITS/FRAME/issues).
 
 ## Use of the FRAME Selection Tool
 
