@@ -1,5 +1,5 @@
 ---
-version: 5.1.1
+version: 5.2
 model_url: model/frame-architecture-5.md
 ---
 
