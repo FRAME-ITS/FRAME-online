@@ -1,0 +1,3 @@
+# Line endings: text files are stored with LF in the repository and checked out in the
+# line endings of the local system; binary files (images, PDF, zip) are left as they are.
+* text=auto
