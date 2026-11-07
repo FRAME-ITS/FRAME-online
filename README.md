@@ -10,45 +10,35 @@ This repository contains the source code for the **FRAME online website**, prese
 
 - **`/docs`** — All website content (Markdown pages, images, navigation structure).  
 - **`mkdocs.yml`** — MkDocs configuration file.  
-- **`pdm.lock` / `pyproject.toml`** — Python project and dependency management via PDM.
+- **`pyproject.toml`** — Python dependencies (Zensical).
 
 ## 🛠️ Local Installation
 
-The project uses **Python 3.12** and **PDM** for environment and dependency management.
+The website is built with [Zensical](https://zensical.org) (successor of Material for MkDocs; it reads `mkdocs.yml`). Any Python 3.10 or later works.
 
 ```bash
-pdm install
+python -m venv .venv
+.venv/bin/python -m pip install zensical        # Windows: .\.venv\Scripts\python -m pip install zensical
 ```
 
-Before running MkDocs, activate the virtual environment created by PDM:
-
-```bash
-pdm venv activate
-```
+---
 
 ## 🧪 Local Development
 
-Edit Markdown files inside the `docs` folder.  
-MkDocs documentation: https://www.mkdocs.org/user-guide/writing-your-docs/
-
-Start a local development server from the project root:
+Edit Markdown files inside the `docs` folder and start a local server from the project root:
 
 ```bash
-mkdocs serve
+.venv/bin/zensical serve                         # Windows: .\.venv\Scripts\zensical serve
 ```
 
-Then open:
+Then open the address printed in the console (http://localhost:8000/FRAME-online/). The site reloads whenever you save changes.
 
-```
-http://localhost:8000
-```
-
-The site will automatically reload whenever you save changes.
+---
 
 ## 🚀 Deployment (GitHub Pages)
 
 Deployment is fully automated.  
-Simply push changes to the repository — GitHub Actions will build and publish the site to GitHub Pages.
+Merge changes into `main` — GitHub Actions (`.github/workflows/ci.yml`) builds the site with Zensical and publishes it to GitHub Pages.
 
 ## 🙏 Acknowledgement
 
