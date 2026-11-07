@@ -1,0 +1,13 @@
+/* FRAME brand colours (20_Sources/Brand/Colourcodes.txt): turquoise #2e98b2, background grey #ededed */
+:root, [data-md-color-scheme="default"] {
+  --md-primary-fg-color: #2e98b2;
+  --md-primary-fg-color--light: #5cb3c7;
+  --md-primary-fg-color--dark: #237a8f;
+  --md-accent-fg-color: #237a8f;
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #2e98b2;
+  --md-accent-fg-color: #5cb3c7;
+}
+.md-typeset .md-button { margin: 0 .4rem .6rem 0; }
+.md-typeset table:not([class]) { font-size: .7rem; }

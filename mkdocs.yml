@@ -1,50 +1,61 @@
 site_name: FRAME Online
+site_description: European ITS Framework Architecture (FRAME) – architecture, tool, reference architectures and library
 repo_url: https://github.com/FRAME-ITS/FRAME-online
 site_url: https://frame-its.github.io/FRAME-online
 repo_name: FRAME-online
+edit_uri: edit/main/docs/
 theme:
   logo: assets/img/frame-logo.png
   name: material
   icon:
     annotation: material/arrow-right-circle
-  palette: 
-    # Palette toggle for light mode
-    - primary: teal
-      accent: light green
+  palette:
+    # FRAME turquoise, see docs/assets/css/frame.css
+    - scheme: default
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+    - search.suggest
   
+extra_css:
+  - assets/css/frame.css
+
 nav:
   - Home: index.md
-  - "Getting Started":
-      - "What is Architecture": getting-started/in-a-nutshell.md
+  - Learn:
+      - "What is an ITS architecture": getting-started/in-a-nutshell.md
       - "FRAME Architecture": getting-started/frame-architecture.md
-      - FRAME Tool: getting-started/tool.md
-      - User Guide: getting-started/user-guide.md
-  - FRAME Models:
-      - FRAME Models: model/frame-models.md
-      - FRAME Architecture v5: model/frame-architecture-5.md
-      - FRAME Architecture v4: model/frame-architecture-4.md
-      - Reference Architectures: model/reference-architectures.md
-  - Resources:
+      - "Methodology": getting-started/user-guide.md
+  - Use:
+      - "FRAME Tool": getting-started/tool.md
+      - "FRAME Architecture v5": model/frame-architecture-5.md
+      - "Reference Architectures": model/reference-architectures.md
+      - "Release history": releases.md
+  - Library:
       - "Documents & Methodologies": docs/documents-and-methodologies.md
       - "Articles & Reports": docs/articles-related-reports.md
-  - Projects:
-      - FRAME projects: projects/frame-next.md
-  - About: 
-      - Impressum: about.md
-      - FAQs: faq.md
-      
+      - FAQ: faq.md
+  - About:
+      - "About FRAME": about.md
+      - Contribute: contribute.md
+      - "FRAME projects": projects/frame-next.md
+      - "FRAME versions": model/frame-models.md
+      - "FRAME Architecture v4": model/frame-architecture-4.md
 
 markdown_extensions:
   - def_list

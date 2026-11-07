@@ -16,18 +16,7 @@
 	applications and services. It normally covers technical aspects, plus 
 	the related organisational, legal and business issues.
 
-	ITS Architectures can be created at national, regional or city level,
-	 or relate to specific sectors or services. They help to ensure that the
-	 resulting ITS deployment:
-
-	 - can be planned in a logical manner;
-	 - integrates successfully with other systems;
-	 - meets the desired performance levels;
-	 - has the desired behaviour;
-	 - is easy to manage;
-	 - is easy to maintain;
-	 - is easy to extend;
-	 - satisfies the expectations of the users.
+	ITS Architectures can be created at national, regional or city level, or relate to specific sectors or services (see below).
 
 ??? example "Technical Definition"
 

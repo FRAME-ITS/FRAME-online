@@ -4,39 +4,15 @@ The FRAME Architecture (originally called the European ITS Framework Architectur
 
 A distinctive feature of the FRAME Architecture is that it is designed to have sub-sets created from it, and is thus unlikely to be used in its entirety. Indeed, on occasions, it contains more than one way of performing a service and the user can select the most appropriate set of functionality to deliver it in that environment. Thus the FRAME Architecture is not so much a model of integrated ITS, as a framework from which specific models of integrated ITS can be created in a systematic and common manner.
 
-!!! info "Areas covered by FRAME Architecture"
+## Framework principle
 
-	The FRAME Architecture now covers the following areas of ITS:
-
-	 - Electronic Fee Collection
-	 - Emergency Notification and Response – Roadside and In-Vehicle Notification
-	 - Traffic Management – Urban, Inter-Urban, Parking, Tunnels and Bridges, Maintenance and Simulation, together with the Management of Incidents, Road Vehicle Based Pollution and the Demand for Road Use
-	 - Public Transport Management – Schedules, Fares, On-Demand Services, Fleet and Driver Management
-	 - In-Vehicle Systems – includes some Cooperative Systems
-	 - Traveller Assistance – Pre-Journey and On-Trip Planning, Travel Information
-	 - Support for Law Enforcement
-	 - Freight and Fleet Management
-	 - Provide Support for Cooperative Systems – specific services not included elsewhere, e.g. bus lane use, freight vehicle parking
-	 - Multi-modal interfaces – links to other modes when required, e.g. travel information, multi-modal crossing management
-
-Because the FRAME Architecture is intended for use within the European Union it conforms to the precepts of subsidiarity, and thus does not mandate any physical or organisational structure on a Member State. It comprises only a set of User Needs which describe what ITS can provide, and a Functional View showing how it can be done. The Methodology, which is supported by computer-based tools, assists the creation of logically consistent sub-sets of the FRAME Architecture Functional View, and the creation of subsequent Physical Views.
-
-## Use of FRAME in Europe
-
-![Use of FRAME in Europe](../assets/img/Rys.-12-01-1024x625-1.png)
-![FRAME Use World Wide](../assets/img/mapa-world-new-1024x605-1.png)
-
-## Framework Principle
-
-A principal objective for the FRAME Architecture is to promote the deployment of ITS in Europe by producing a framework which would provide a systematic basis for planning ITS implementations, facilitate their integration when multiple systems were to be deployed, and help to ensure inter-operability, including across European borders.
-
-The FRAME Architecture achieves this objective by providing a model of almost all of ITS from which specific sub-sets of integrated ITS can be created in a systematic and common manner. It covers most ITS applications and services that are currently being used, or being considered for implementation, in Europe, and it does not impose any technical or organisational assumptions on the way things are done.
+The FRAME Architecture achieves its aim by providing a model of almost all of ITS from which specific sub-sets of integrated ITS can be created in a systematic and common manner. It covers most ITS applications and services that are currently being used, or being considered for implementation, in Europe, and it does not impose any technical or organisational assumptions on the way things are done.
 
 It therefore provides ITS engineers with a common approach, or “language”, for use throughout the EU.
 
 Because the FRAME Architecture is intended for use within the European Union it conforms to the precepts of subsidiarity, and thus does not mandate any physical view or organisational structure on a Member State. It therefore consists of only a set of User Needs for ITS, and a Functional View that satisfies them; the remainder of the views are created when required. Thus the FRAME Architecture is “neutral” and makes no assumptions about the way things are done.
 
-## Use of the FRAME Architecture
+## Views of an ITS architecture
 
 The FRAME Architecture is intended to be used within a top down approach to the planning and deployment of integrated ITS.  The overall concept may, or may not, be represented in a formal (reference) model.  Since the creation of a reference model requires a number of decisions or choices to have been taken by those implementing and/or regulating ITS, the FRAME Architecture does not provide one.
 
@@ -45,17 +21,20 @@ The overall concept and the system structure should be described in a technology
 ![image](../assets/img/Architecture-Layers-Stds-n-800x486-1.png)
 ![image](../assets/img/Example-Physical-Viewpoint-n-800x491-1.png)
 
-The system structure contains a number of views.  The functionality needed to implement ITS Services is provided by the Functional View; which does not impose any specific technical solutions on its users. Each specific implementation requires choices to be made by the stakeholders, in particular which components will be used for the ITS implementation and the links between them (the Physical View).
+An ITS architecture created with FRAME (version 5) describes the service in the following views. Each view builds on the previous ones; the FRAME Meta-model defines their building blocks and the relationships between them.
 
-Further analysis, also based on specific choices or decisions, can then provide:
+| View | What it describes | Main building blocks |
+|---|---|---|
+| **Motivation layer** | why the service is needed: the stakeholders, their expectations, the vision and mission, the added value of the ITS service | Stakeholder, Business Expectation, ITS Vision, Mission Statement, ITS Service, ITS Service Added Value, Requirement |
+| **Functional view** | what the system has to do: chains of functions connected by data flows, with terminators at both ends; derived from the selected User Needs | User Need, Function, Data Flow, Data Store, Terminator |
+| **Organisational view** | who is involved: actors, the roles they perform, the agreements between the roles, business processes | Actor, Role, Agreement, Business Process |
+| **Physical view** | how the functions are allocated to sub-systems and modules, and which physical data flows connect them; always based on a consistent functional view | Sub-system, Module, Physical Data Flow, Interface |
+| **Communications view** | how the sub-systems and modules exchange data: protocols, data formats, interfaces | Interface, Specification |
+| **Safety and security view** | hazards that can cause physical harm, and threats to confidentiality, integrity and availability | Safety and security analysis (PASSPORT) |
 
- - Communications Viewpoint – the requirements for communications between the components
- - Organisational Viewpoint – who  owns, manages and operates each components and other organisational issues
- - Information Viewpoint – information that is used, its attributes and relationships
+The content of the physical and communications views can be used in calls for tender, so that the components and communications can be procured; the organisational view helps to put the right management structure, rules and agreements in place. How the views are built step by step is described in [Methodology](user-guide.md) and, for a complete example, in the [Reference Architectures](../model/reference-architectures.md).
 
-The content of the Physical Viewpoint and the Communications Viewpoint can be included in Calls for Tender to enable the components and communications to be procured and deployed. The Organisational Viewpoint is used to enable the correct management structure, plus rules and regulations, to be put in place so that the services can be correctly provided.
-
-## The FRAME Model
+## The FRAME model
 
 The FRAME model used for the Functional View is based on hierarchical Data Flow Diagrams. At the highest level is the Context Diagram (see figure below) which shows all the functionality supported by the FRAME Architecture inside a box labelled “System” surrounded by a set of “Terminators”, which are outside the boundary of the system. Each Terminator represents some thing, or person, to which the system will send data and/or from which it will receive data. As there is a large amount of functionality in the FRAME Architecture (2-3000 elements in total), its size is managed using hierarchies of functions and terminators.
 
@@ -65,7 +44,7 @@ The FRAME System in the figure above is divided into 9 Areas (see below). Each A
 
 The name “Terminator” derives from the fact that the data for, and produced by, the System starts/stops there. The FRAME Architecture sub-divides some of its Terminators into a number of Actors. Not only does this make the total architecture more manageable, especially the construction of the diagrams, but it is also useful for situations when some data goes to/from all Actors in the Terminator, e.g. all Drivers, and on other occasions data goes to/from a specific Actor, e.g. Public Transport Driver.
 
-## The 9 Areas of the FRAME Architecture
+## Functional areas
 
 The FRAME Architecture models road based ITS applications and services, and is divided into the following nine broad Areas:
 
@@ -80,3 +59,10 @@ The FRAME Architecture models road based ITS applications and services, and is d
  - Provide Support for Cooperative Systems – includes support for cooperative systems not included elsewhere
 
 Links to other modes of transport are made through the Terminator “Multi-Modal System”, which is used to provide travellers with multi-modal travel information, to manage multi-modal crossings and incidents that take place on other modes.
+
+## Use of FRAME in Europe
+
+![Use of FRAME in Europe](../assets/img/Rys.-12-01-1024x625-1.png)
+![FRAME Use World Wide](../assets/img/mapa-world-new-1024x605-1.png)
+
+The maps show the use of FRAME up to the end of the FRAME-NEXT project.

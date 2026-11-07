@@ -1,46 +1,57 @@
 ---
 version: 5.2
-model_url: model/frame-architecture-5.md
+hide:
+  - navigation
+  - toc
 ---
 
-# European Intelligent Transport Systems (ITS) Framework Architecture
+# FRAME – European ITS Framework Architecture
 
-FRAME, an acronym for the FRamework Architecture Made for Europe, is a minimum stable framework necessary for the deployment of integrated and interoperable ITS. 
+FRAME is the European framework for planning integrated and interoperable Intelligent Transport Systems (ITS). It contains the User Needs and the functionality of practically all of ITS, a method for selecting the part a service needs, and an Enterprise Architect tool in which the motivation, functional, organisational, physical and communication views of the service are built.
 
-The FRAME is developed as a framework that provides a systematic basis for planning ITS implementations in Europe. It facilitates their integration when deploying multiple systems and helps ensure interoperability, across European countries. A distinctive feature of the FRAME is that it sets out all ITS functionality, from which smaller systems and subsets are created, describing a specific service, or set of services. It offers more than one way of performing a service, allowing users to select the most appropriate set of functionalities for their environment. 
-
-The development methodology, supported by computer-based tools, assists in creating logically consistent subsets of the FRAME architecture functional view and subsequent physical, communication and organizational views. Thus, the FRAME architecture serves as a framework from which specific models of integrated ITS can be systematically created.
-
-## Explore the website
+[Download FRAME {{ page.meta.version }}](https://github.com/FRAME-ITS/FRAME/releases/latest){ .md-button .md-button--primary }
+[Get started](getting-started/tool.md){ .md-button }
+[Reference architectures](model/reference-architectures.md){ .md-button }
 
 <div class="grid cards" markdown>
 
--   :fontawesome-brands-markdown:{ .lg .middle } __FRAME Models__ 
+-   :material-school:{ .lg .middle } __Learn__
 
     ---
 
-    Download latest FRAME architecture in version {{page.meta.version}}. Browse through FRAME ITS model with all encompassing functionality. [:octicons-arrow-right-24:]({{page.meta.model_url}})
+    What an ITS architecture is, how FRAME is built and how to create an architecture with it.
 
--   :material-format-font:{ .lg .middle } __How to Start?__ 
+    [:octicons-arrow-right-24: FRAME Architecture](getting-started/frame-architecture.md)
 
-    ---
-
-    Read what is architecture, how does FRAME fit in and how to create one yourself. [:octicons-arrow-right-24:](getting-started/frame-architecture.md)
-
--   :material-clock-fast:{ .lg .middle } __Documents & More__
+-   :material-tools:{ .lg .middle } __Use__
 
     ---
 
-    Explore documents and methodologies for using and creating FRAME architecture as well as papers and articles we wrote about it [:octicons-arrow-right-24:](docs/documents-and-methodologies.md)
+    Download the FRAME Architecture Tool, browse the model and start from a reference architecture.
 
--   :material-scale-balance:{ .lg .middle } __History__
+    [:octicons-arrow-right-24: FRAME Tool](getting-started/tool.md)
+
+-   :material-bookshelf:{ .lg .middle } __Library__
 
     ---
 
-    Find out about the projects that funded development of FRAME Architecture and their main goals [:octicons-arrow-right-24:](projects/frame-next.md)
+    Guides, deliverables of the FRAME projects, papers and answers to common questions.
+
+    [:octicons-arrow-right-24: Documents](docs/documents-and-methodologies.md)
+
+-   :material-account-group:{ .lg .middle } __Contribute__
+
+    ---
+
+    Report a problem or propose a change; FRAME is maintained openly on GitHub.
+
+    [:octicons-arrow-right-24: How to contribute](contribute.md)
 
 </div>
 
+## News
+
+ - **November 2026** – releases [5.2](https://github.com/FRAME-ITS/FRAME/releases/tag/v5.2.0) and [5.1.1](https://github.com/FRAME-ITS/FRAME/releases/tag/v5.1.1) published on GitHub with release notes; release 5.3 in preparation ([pull request #95](https://github.com/FRAME-ITS/FRAME/pull/95)). See [Release history](releases.md).
 
 ??? quote "Acknowledgment"
 
@@ -49,4 +60,3 @@ The development methodology, supported by computer-based tools, assists in creat
 	The FRAME has received funding from the European Union's Connecting Europe Facility (CEF) programme under grant agreement No [MOVE/C3/SUB/2016-405/CEF/PSA/SI2.759934]. For more information go to Projects section.
 
 	The content of this document reflects only the authors' views, and the European Union is not responsible for any use that may be made of the information it contains.
-
