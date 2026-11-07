@@ -1,4 +1,8 @@
-# Creating an ITS Architecture using FRAME
+# Methodology: creating an ITS architecture with FRAME
+
+!!! info "Methodology and tool"
+
+	This page explains the method. How to do it in the FRAME Architecture Tool (Enterprise Architect) is described in the User Guide, published with each [release](../releases.md). The views and their building blocks are summarised in [FRAME Architecture](frame-architecture.md#views-of-an-its-architecture).
 
 The methodology for creating an ITS Architecture from the FRAME Architecture is illustrated in the figure below. The use of particular technologies or supplier products is not included in the FRAME Architecture. This is important for two reasons. Firstly the ITS Architectures created using the methodology will not become obsolete through advances in technology, or product development, and secondly it opens up the possibility for the development of new technologies to enable particular functionality to be provided.
 
