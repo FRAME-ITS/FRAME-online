@@ -10,7 +10,7 @@ usage: python tools/mirror_library.py <SharePoint General folder> [--apply]
 import sys, os, shutil, subprocess, datetime
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 dest_root = sys.argv[1]; APPLY = '--apply' in sys.argv
-LIB, LEG, PUB = '10_Inputs/FRAME Library', '10_Inputs/Legacy Repository/Tools', '40_Published/Tool Releases/v5.1.1'
+LIB, LEG = '10_Inputs/FRAME Library', '10_Inputs/Legacy Repository/Tools'   # tool releases: GitHub Releases of FRAME-ITS/FRAME
 RULES = [  # (prefix in the repository, target folder); the first match wins, the rest of the path is kept
     ('docs/assets/docs/articles/', f'{LIB}/Articles'),
     ('docs/assets/docs/brochures/', f'{LIB}/Brochures'),
@@ -19,8 +19,6 @@ RULES = [  # (prefix in the repository, target folder); the first match wins, th
     ('docs/assets/docs/manuals/', f'{LEG}/Manuals'),
     ('docs/assets/docs/FRAME-Seminar', f'{LIB}/Seminars and Workshops'),
     ('docs/assets/docs/FRAME-Workshop', f'{LIB}/Seminars and Workshops'),
-    ('docs/assets/tools/FRAME_Architecture_Tool_V5.1.1', PUB),
-    ('docs/assets/tools/FRAME Toolbox_V1.0', PUB),
     ('docs/assets/tools/', LEG),
 ]
 files = subprocess.run(['git', '-C', root, 'ls-files', '-z', 'docs/assets/docs', 'docs/assets/tools'], capture_output=True, check=True).stdout.decode().split('\0')
